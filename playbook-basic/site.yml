@@ -1,0 +1,20 @@
+---
+- name: Install and start httpd
+  hosts: web
+  tasks:
+    - name: Install apache httpd
+      yum:
+          name: httpd
+          state: present
+
+    - name: correct index.html
+      copy:
+          src: files/index.html
+          dest: /var/www/html/index.html
+
+    - name: Enable httpd
+      service:
+          name: httpd
+          state: started
+          enabled: true
+

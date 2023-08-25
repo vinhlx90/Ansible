@@ -1,0 +1,24 @@
+---
+- name: Install and start httpd
+  hosts: web
+  tasks:
+    - name: Install apache httpd
+      yum:
+          name: httpd
+          state: present
+    - name: Enable httpd
+      service:
+          name: httpd
+          state: started
+          enabled: true
+    - name: correct index.html present
+      copy:
+          src: files/index.html
+          dest: /vwr/www/html/index.html
+    - name: Enable Firewall and allow http access from external
+      firewald:
+          state: started
+          enable: http
+          permanent: true
+          immediate: true
+
