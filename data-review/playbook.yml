@@ -44,7 +44,7 @@
         mode: 0400
     - name: create index.html
       copy:
-        content: "{{ ansible_facts['fqdn'] }} {{ ansible_facts['default_ipv4']['address'] }} has been customized by Ansible.\n"
+        content: "{{ ansible_facts['fqdn'] }} ({{ ansible_facts['default_ipv4']['address'] }}) has been customized by Ansible.\n"
         dest: "{{ web_root }}/index.html"
     - name: Firewall service enabled and started
       service:
