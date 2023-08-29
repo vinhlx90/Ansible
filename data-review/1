@@ -1,0 +1,4 @@
+---
+- name: Install and config webserver with basic auth
+  hosts: webserver
+  vars_file: webserver.yml
