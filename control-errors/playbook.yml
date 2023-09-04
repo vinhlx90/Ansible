@@ -1,5 +1,5 @@
 ---
-- name: Task Failure Exercise
+- name: Task Failure Execise
   hosts: databases
   vars:
     web_package: httpd
@@ -11,13 +11,11 @@
       command: date
       register: command_result
       changed_when: false
-
-    - name: Print local time
+    - name: print local time
       debug:
-              var: command_result.stdout  
+        var: command_result.stdout
 
-
-    - name: Attemps to set up a webserver
+    - name: Attempt to set up wevserver
       block:
         - name: Install {{ web_package }} package
           yum:
@@ -25,15 +23,15 @@
             state: present
           failed_when: web_package == "httpd"
 
-      rescue: 
+      rescue:
         - name: Install {{ db_package }} package
           yum:
             name: "{{ db_package }}"
             state: present
+
       always:
-        - name: Start {{ db_service }} service
+        - name: start {{ db_service  }} service
           service:
-            name: "{{  db_service}}"
-            state: started
-           
+             name: "{{ db_service }}"
+             state: started
 ...
