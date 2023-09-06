@@ -1,0 +1,16 @@
+---
+- name: Using copy module
+  hosts: all
+  remote_user: root
+
+  tasks:
+    - name: copy file users.txt to remote hosts
+      copy:
+        src: /home/student/file-manage/files/users.txt
+        dest: /home/devops/users.txt
+        #mode 0640
+        owner: devops
+        group: devops
+        mode: u+rw,g-wx,o-rwx
+        setype: samba_share_t
+...

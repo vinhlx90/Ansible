@@ -1,0 +1,682 @@
+Sep  2 23:57:32 serverb polkitd[840]: Loading rules from directory /etc/polkit-1/rules.d
+Sep  2 23:57:32 serverb polkitd[840]: Loading rules from directory /usr/share/polkit-1/rules.d
+Sep  2 23:57:32 serverb polkitd[840]: Finished loading, compiling and executing 4 rules
+Sep  2 23:57:32 serverb polkitd[840]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Sep  2 23:57:34 serverb sshd[896]: Server listening on 0.0.0.0 port 22.
+Sep  2 23:57:34 serverb sshd[896]: Server listening on :: port 22.
+Sep  3 01:01:51 serverb sshd[1293]: Accepted publickey for root from 172.25.250.9 port 36154 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  3 01:01:51 serverb systemd[1297]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  3 01:01:51 serverb sshd[1293]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  3 01:01:52 serverb sshd[1308]: Received disconnect from 172.25.250.9 port 36154:11: disconnected by user
+Sep  3 01:01:52 serverb sshd[1308]: Disconnected from user root 172.25.250.9 port 36154
+Sep  3 01:01:52 serverb sshd[1293]: pam_unix(sshd:session): session closed for user root
+Sep  3 01:01:52 serverb sshd[1320]: Accepted publickey for root from 172.25.250.9 port 36156 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  3 01:01:52 serverb systemd[1336]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  3 01:01:52 serverb sshd[1320]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  3 01:01:52 serverb sshd[1346]: Received disconnect from 172.25.250.9 port 36156:11: disconnected by user
+Sep  3 01:01:52 serverb sshd[1346]: Disconnected from user root 172.25.250.9 port 36156
+Sep  3 01:01:52 serverb sshd[1320]: pam_unix(sshd:session): session closed for user root
+Sep  3 01:11:11 serverb sshd[1381]: Accepted publickey for devops from 172.25.250.9 port 36182 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  3 01:11:11 serverb systemd[1385]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Sep  3 01:11:11 serverb sshd[1381]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Sep  3 01:11:12 serverb sudo[1518]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-epnnkcogkkdlaygiepbmbtxfudvhjgcd ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693717871.828094-5551-71921243797621/AnsiballZ_setup.py
+Sep  3 01:11:12 serverb sudo[1518]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 01:11:12 serverb sudo[1518]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 01:11:12 serverb sudo[1518]: pam_unix(sudo:session): session closed for user root
+Sep  3 01:12:12 serverb sshd[1396]: Received disconnect from 172.25.250.9 port 36182:11: disconnected by user
+Sep  3 01:12:12 serverb sshd[1396]: Disconnected from user devops 172.25.250.9 port 36182
+Sep  3 01:12:12 serverb sshd[1381]: pam_unix(sshd:session): session closed for user devops
+Sep  3 01:12:12 serverb systemd[1390]: pam_unix(systemd-user:session): session closed for user devops
+Sep  3 22:18:17 serverb polkitd[847]: Loading rules from directory /etc/polkit-1/rules.d
+Sep  3 22:18:17 serverb polkitd[847]: Loading rules from directory /usr/share/polkit-1/rules.d
+Sep  3 22:18:17 serverb polkitd[847]: Finished loading, compiling and executing 4 rules
+Sep  3 22:18:17 serverb polkitd[847]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Sep  3 22:18:18 serverb sshd[902]: Server listening on 0.0.0.0 port 22.
+Sep  3 22:18:18 serverb sshd[902]: Server listening on :: port 22.
+Sep  3 22:25:44 serverb sshd[1178]: Accepted publickey for devops from 172.25.250.9 port 56202 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  3 22:25:45 serverb systemd[1182]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Sep  3 22:25:45 serverb sshd[1178]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Sep  3 22:25:45 serverb sudo[1315]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ggjzhndxmoqnakazluxwmkvyzlfzgbsz ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693794345.1971142-2711-44670024618916/AnsiballZ_setup.py
+Sep  3 22:25:45 serverb sudo[1315]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 22:25:45 serverb sudo[1315]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 22:25:46 serverb sudo[1315]: pam_unix(sudo:session): session closed for user root
+Sep  3 22:26:46 serverb sshd[1193]: Received disconnect from 172.25.250.9 port 56202:11: disconnected by user
+Sep  3 22:26:46 serverb sshd[1193]: Disconnected from user devops 172.25.250.9 port 56202
+Sep  3 22:26:46 serverb sshd[1178]: pam_unix(sshd:session): session closed for user devops
+Sep  3 22:26:46 serverb systemd[1187]: pam_unix(systemd-user:session): session closed for user devops
+Sep  3 23:20:25 serverb sshd[1414]: Accepted publickey for devops from 172.25.250.9 port 56204 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  3 23:20:25 serverb systemd[1418]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Sep  3 23:20:26 serverb sshd[1414]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Sep  3 23:20:26 serverb sudo[1551]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-eujejdfqbnsliulceoqlxagladqgbkyc ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797626.111732-3517-232708432195301/AnsiballZ_setup.py
+Sep  3 23:20:26 serverb sudo[1551]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:26 serverb sudo[1551]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:27 serverb sudo[1551]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:27 serverb sudo[1694]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-lrhsnmoozhrkccxuqwhwvpoosaopvyfz ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797627.4795969-3534-88326192879781/AnsiballZ_dnf.py
+Sep  3 23:20:27 serverb sudo[1694]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:27 serverb sudo[1694]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:30 serverb groupadd[1706]: group added to /etc/group: name=apache, GID=48
+Sep  3 23:20:30 serverb groupadd[1706]: group added to /etc/gshadow: name=apache
+Sep  3 23:20:30 serverb groupadd[1706]: new group: name=apache, GID=48
+Sep  3 23:20:30 serverb useradd[1713]: new user: name=apache, UID=48, GID=48, home=/usr/share/httpd, shell=/sbin/nologin
+Sep  3 23:20:33 serverb sudo[1694]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:33 serverb sudo[2567]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-yjqvkpzaidtsrqnobzvwkgdnzedtknhf ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797633.3080542-3543-89016753975468/AnsiballZ_systemd.py
+Sep  3 23:20:33 serverb sudo[2567]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:33 serverb sudo[2567]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:34 serverb sudo[2567]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:34 serverb sudo[3189]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-laiybuwhlbmbxzascfscmpujyakguiyx ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797634.6269221-3543-46104308340844/AnsiballZ_systemd.py
+Sep  3 23:20:34 serverb sudo[3189]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:34 serverb sudo[3189]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:35 serverb sudo[3189]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:35 serverb sudo[3866]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-xmegbfvjmszeyhotjifxkyakcdodlhda ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797635.2051687-3559-5477815088736/AnsiballZ_file.py
+Sep  3 23:20:35 serverb sudo[3866]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:35 serverb sudo[3866]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:35 serverb sudo[3866]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:36 serverb sudo[4418]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-hrfhvfwyztnjjlfyhbzleexuwvxoizuc ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797635.7764695-3568-110956740402026/AnsiballZ_stat.py
+Sep  3 23:20:36 serverb sudo[4418]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:36 serverb sudo[4418]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:36 serverb sudo[4418]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:36 serverb sudo[4588]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-fxsdyayuhpntzbkbubcykcxejjslfiqq ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797635.7764695-3568-110956740402026/AnsiballZ_stat.py
+Sep  3 23:20:36 serverb sudo[4588]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:36 serverb sudo[4588]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:36 serverb sudo[4588]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:36 serverb sudo[5116]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-joaakdlpppmldrnhzxyjdsrgjujcbpyn ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797635.7764695-3568-110956740402026/AnsiballZ_copy.py
+Sep  3 23:20:36 serverb sudo[5116]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:36 serverb sudo[5116]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:37 serverb sudo[5116]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:37 serverb sudo[5449]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-zxboaoqioqologgwtkbmbktcwtgvezwa ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797637.0784514-3568-60121276652634/AnsiballZ_stat.py
+Sep  3 23:20:37 serverb sudo[5449]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:37 serverb sudo[5449]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:37 serverb sudo[5449]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:37 serverb sudo[5628]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-sdzefphumqoscvfyvhdmmjzjfaulkekp ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797637.0784514-3568-60121276652634/AnsiballZ_stat.py
+Sep  3 23:20:37 serverb sudo[5628]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:37 serverb sudo[5628]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:37 serverb sudo[5628]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:37 serverb sudo[5888]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-gjvuhwjfsaoljbbimwgtsldbhidypolc ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797637.0784514-3568-60121276652634/AnsiballZ_copy.py
+Sep  3 23:20:37 serverb sudo[5888]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:37 serverb sudo[5888]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:38 serverb sudo[5888]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:38 serverb sudo[6232]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-jsfqjztzkjjlxirprfzsnwupgmgrrpjd ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797638.0859678-3568-200986021114103/AnsiballZ_stat.py
+Sep  3 23:20:38 serverb sudo[6232]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:38 serverb sudo[6232]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:38 serverb sudo[6232]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:38 serverb sudo[6397]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-eupemfkngjcugcoufouojkawmpdhawkn ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797638.0859678-3568-200986021114103/AnsiballZ_stat.py
+Sep  3 23:20:38 serverb sudo[6397]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:38 serverb sudo[6397]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:38 serverb sudo[6397]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:38 serverb sudo[6694]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-osvbmcsjpzhorjnltqziuqzjtnfhgdkn ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797638.0859678-3568-200986021114103/AnsiballZ_copy.py
+Sep  3 23:20:38 serverb sudo[6694]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:38 serverb sudo[6694]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:39 serverb sudo[6694]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:39 serverb sudo[7037]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-srdybnxlfhgdutiygmvtovcxvippstmj ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797639.1259308-3568-94732734954353/AnsiballZ_stat.py
+Sep  3 23:20:39 serverb sudo[7037]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:39 serverb sudo[7037]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:39 serverb sudo[7037]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:39 serverb sudo[7207]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-vxdcceavibkyfmmserexktfukdkfcbnl ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797639.1259308-3568-94732734954353/AnsiballZ_stat.py
+Sep  3 23:20:39 serverb sudo[7207]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:39 serverb sudo[7207]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:39 serverb sudo[7207]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:39 serverb sudo[7448]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-pvglixjxaikhqdniirqolkgbjhvwodiw ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797639.1259308-3568-94732734954353/AnsiballZ_copy.py
+Sep  3 23:20:39 serverb sudo[7448]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:39 serverb sudo[7448]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:40 serverb sudo[7448]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:20:40 serverb sudo[7845]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-rxrgpkvnbhrqqzypnhuatoqhxqroycek ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797640.1505725-3642-77776614160793/AnsiballZ_systemd.py
+Sep  3 23:20:40 serverb sudo[7845]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:20:40 serverb sudo[7845]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:20:41 serverb sudo[7845]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:01 serverb sudo[27066]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-mnwxpbpziwnftageftdomeinxqylvitg ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797660.94071-3664-119190206361081/AnsiballZ_setup.py
+Sep  3 23:21:01 serverb sudo[27066]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:01 serverb sudo[27066]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:01 serverb sudo[27066]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:02 serverb sudo[27209]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-xvztqvvdnbqjsyvcjhikiihjusxfqhzi ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797662.1827476-3685-35382587799785/AnsiballZ_dnf.py
+Sep  3 23:21:02 serverb sudo[27209]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:02 serverb sudo[27209]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:03 serverb sudo[27209]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:04 serverb sudo[27318]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-rigxqgbpxpxkbzvoiwixgktkujjwqdqc ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797663.718261-3694-30797553378119/AnsiballZ_systemd.py
+Sep  3 23:21:04 serverb sudo[27318]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:04 serverb sudo[27318]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:04 serverb sudo[27318]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:04 serverb sudo[27431]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-zysynrdsptslplubgsdmxolaxowtqofo ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797664.3989942-3694-173385240652103/AnsiballZ_systemd.py
+Sep  3 23:21:04 serverb sudo[27431]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:04 serverb sudo[27431]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:04 serverb sudo[27431]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:05 serverb sudo[27544]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-hoobctekjcjyszldwwbatbjccmithwym ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797664.9132242-3710-225630379459641/AnsiballZ_file.py
+Sep  3 23:21:05 serverb sudo[27544]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:05 serverb sudo[27544]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:05 serverb sudo[27544]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:05 serverb sudo[27653]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-rigkbguhsefwrucgipvaipfrpoycxjnz ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797665.4042168-3719-140323850183726/AnsiballZ_stat.py
+Sep  3 23:21:05 serverb sudo[27653]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:05 serverb sudo[27653]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:05 serverb sudo[27653]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:05 serverb sudo[27712]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-xtnritnnltflyeytwkmncjryrpbsbxxf ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797665.4042168-3719-140323850183726/AnsiballZ_stat.py
+Sep  3 23:21:05 serverb sudo[27712]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:05 serverb sudo[27712]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:06 serverb sudo[27712]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:06 serverb sudo[27771]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-bktlksodasbmpsarkjszaxvdyvkmmuxv ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797665.4042168-3719-140323850183726/AnsiballZ_file.py
+Sep  3 23:21:06 serverb sudo[27771]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:06 serverb sudo[27771]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:06 serverb sudo[27771]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:06 serverb sudo[27880]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-magyrvnblvueykrhlrugjxlvicbooyjm ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797666.3858292-3719-105925994001115/AnsiballZ_stat.py
+Sep  3 23:21:06 serverb sudo[27880]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:06 serverb sudo[27880]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:06 serverb sudo[27880]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:06 serverb sudo[27939]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ncptifnopwvxuemfefhbgnsprbjtsyun ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797666.3858292-3719-105925994001115/AnsiballZ_stat.py
+Sep  3 23:21:06 serverb sudo[27939]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:06 serverb sudo[27939]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:06 serverb sudo[27939]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:07 serverb sudo[27998]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-mhtwvmcbzeklsakuvsqhkqukvvywbooc ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797666.3858292-3719-105925994001115/AnsiballZ_file.py
+Sep  3 23:21:07 serverb sudo[27998]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:07 serverb sudo[27998]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:07 serverb sudo[27998]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:07 serverb sudo[28107]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-eiwykpmqlqicsyqtsutkvtxmkcanlwsl ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797667.3011827-3719-230439124382523/AnsiballZ_stat.py
+Sep  3 23:21:07 serverb sudo[28107]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:07 serverb sudo[28107]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:07 serverb sudo[28107]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:07 serverb sudo[28166]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-vxnfdzynclnpocdfvcnvexxzcvxulnyp ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797667.3011827-3719-230439124382523/AnsiballZ_stat.py
+Sep  3 23:21:07 serverb sudo[28166]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:07 serverb sudo[28166]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:07 serverb sudo[28166]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:07 serverb sudo[28225]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ntpxxrvxlgejiudvvyjfodenoqyglpzx ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797667.3011827-3719-230439124382523/AnsiballZ_file.py
+Sep  3 23:21:07 serverb sudo[28225]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:07 serverb sudo[28225]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:08 serverb sudo[28225]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:08 serverb sudo[28334]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-gkkrrdhltrfpgbibzmyizjhjugsxzcvg ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797668.1861877-3719-207663470469981/AnsiballZ_stat.py
+Sep  3 23:21:08 serverb sudo[28334]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:08 serverb sudo[28334]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:08 serverb sudo[28334]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:08 serverb sudo[28393]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-jpnuynbqgxsfljhvouymvzmzgqjcpavy ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797668.1861877-3719-207663470469981/AnsiballZ_stat.py
+Sep  3 23:21:08 serverb sudo[28393]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:08 serverb sudo[28393]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:08 serverb sudo[28393]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:21:08 serverb sudo[28452]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-gcjoypudzpoaspclsuxeiyngotcanttr ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797668.1861877-3719-207663470469981/AnsiballZ_file.py
+Sep  3 23:21:08 serverb sudo[28452]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:21:08 serverb sudo[28452]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:21:09 serverb sudo[28452]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:22:09 serverb sshd[1429]: Received disconnect from 172.25.250.9 port 56204:11: disconnected by user
+Sep  3 23:22:09 serverb sshd[1429]: Disconnected from user devops 172.25.250.9 port 56204
+Sep  3 23:22:09 serverb sshd[1414]: pam_unix(sshd:session): session closed for user devops
+Sep  3 23:23:07 serverb sshd[28484]: Accepted publickey for student from 172.25.250.9 port 56216 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  3 23:23:07 serverb systemd[28488]: pam_unix(systemd-user:session): session opened for user student by (uid=0)
+Sep  3 23:23:07 serverb sshd[28484]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Sep  3 23:23:25 serverb sudo[28524]: student : TTY=pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/bin/systemctl status firewalld
+Sep  3 23:23:26 serverb sudo[28524]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:23:26 serverb sudo[28524]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Sep  3 23:23:28 serverb sudo[28524]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:23:38 serverb sudo[28530]: student : TTY=pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/bin/firewall-cmd --list-all
+Sep  3 23:23:38 serverb sudo[28530]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:23:38 serverb sudo[28530]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Sep  3 23:23:39 serverb sudo[28530]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:18 serverb sshd[28498]: Received disconnect from 172.25.250.9 port 56216:11: disconnected by user
+Sep  3 23:24:18 serverb sshd[28498]: Disconnected from user student 172.25.250.9 port 56216
+Sep  3 23:24:18 serverb sshd[28484]: pam_unix(sshd:session): session closed for user student
+Sep  3 23:24:18 serverb systemd[28492]: pam_unix(systemd-user:session): session closed for user student
+Sep  3 23:24:51 serverb sshd[28545]: Accepted publickey for devops from 172.25.250.9 port 56218 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  3 23:24:51 serverb systemd[28549]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Sep  3 23:24:51 serverb sshd[28545]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Sep  3 23:24:52 serverb sudo[28681]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-phgvhfokzvlwqqhlxeabdqurwrxtnaee ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797891.9273605-3908-213781220095916/AnsiballZ_setup.py
+Sep  3 23:24:52 serverb sudo[28681]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:52 serverb sudo[28681]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:52 serverb sudo[28681]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:53 serverb sudo[28824]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-fbnbteycxlqeaxmhfdcnghttlhyoqxrx ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797893.1531715-3925-24630286000304/AnsiballZ_dnf.py
+Sep  3 23:24:53 serverb sudo[28824]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:53 serverb sudo[28824]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:54 serverb sudo[28824]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:55 serverb sudo[28933]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-hdlesoaxruofeqghksnrdysryeeapopx ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797894.6788485-3934-95057438934328/AnsiballZ_systemd.py
+Sep  3 23:24:55 serverb sudo[28933]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:55 serverb sudo[28933]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:55 serverb sudo[28933]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:55 serverb sudo[29046]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-jdadszmkllbphudvffgggzbhydvzzatp ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797895.3540962-3934-68542810519655/AnsiballZ_systemd.py
+Sep  3 23:24:55 serverb sudo[29046]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:55 serverb sudo[29046]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:55 serverb sudo[29046]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:56 serverb sudo[29159]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-iklmmsuotvfpbdminkcxazuonxxbwmwk ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797895.874774-3950-269753122289267/AnsiballZ_file.py
+Sep  3 23:24:56 serverb sudo[29159]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:56 serverb sudo[29159]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:56 serverb sudo[29159]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:56 serverb sudo[29268]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-qjwloscuzyeyccyhyqgthzyklpdkbsin ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797896.3889112-3959-116152808260336/AnsiballZ_stat.py
+Sep  3 23:24:56 serverb sudo[29268]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:56 serverb sudo[29268]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:56 serverb sudo[29268]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:56 serverb sudo[29327]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-hiocuntsqzeeefxodtthjcuejqxkubps ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797896.3889112-3959-116152808260336/AnsiballZ_stat.py
+Sep  3 23:24:56 serverb sudo[29327]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:56 serverb sudo[29327]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:57 serverb sudo[29327]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:57 serverb sudo[29386]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-axyjuglzmtnnakhnqzoyqjebxprhrzay ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797896.3889112-3959-116152808260336/AnsiballZ_file.py
+Sep  3 23:24:57 serverb sudo[29386]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:57 serverb sudo[29386]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:57 serverb sudo[29386]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:57 serverb sudo[29495]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ycrsvclxvnbkdktkqdtgyfirhgtdaqmf ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797897.3821948-3959-11480609224128/AnsiballZ_stat.py
+Sep  3 23:24:57 serverb sudo[29495]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:57 serverb sudo[29495]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:57 serverb sudo[29495]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:57 serverb sudo[29554]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-vxfqmsfmpgjygzooyvuhlgiwwzfwbwhe ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797897.3821948-3959-11480609224128/AnsiballZ_stat.py
+Sep  3 23:24:57 serverb sudo[29554]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:57 serverb sudo[29554]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:57 serverb sudo[29554]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:58 serverb sudo[29613]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-fhbbkbyrmbhqnswqztevcmzututvudnf ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797897.3821948-3959-11480609224128/AnsiballZ_file.py
+Sep  3 23:24:58 serverb sudo[29613]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:58 serverb sudo[29613]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:58 serverb sudo[29613]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:58 serverb sudo[29722]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-jcqpucwrfvliiiwzujbfnavepcpkoips ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797898.27249-3959-203473266197130/AnsiballZ_stat.py
+Sep  3 23:24:58 serverb sudo[29722]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:58 serverb sudo[29722]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:58 serverb sudo[29722]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:58 serverb sudo[29781]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-avmmzoiwyfcmdhfyipkpcfuekvfupqrf ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797898.27249-3959-203473266197130/AnsiballZ_stat.py
+Sep  3 23:24:58 serverb sudo[29781]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:58 serverb sudo[29781]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:58 serverb sudo[29781]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:58 serverb sudo[29840]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ffqfhlxufqovbevencfyhueopzptrusn ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797898.27249-3959-203473266197130/AnsiballZ_file.py
+Sep  3 23:24:58 serverb sudo[29840]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:58 serverb sudo[29840]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:59 serverb sudo[29840]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:59 serverb sudo[29949]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-pzrliramndcoilzikkajamorhmrzrgna ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797899.165328-3959-163339381487639/AnsiballZ_stat.py
+Sep  3 23:24:59 serverb sudo[29949]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:59 serverb sudo[29949]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:59 serverb sudo[29949]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:59 serverb sudo[30008]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-qgbyrhqpxtdxamoewnrgeiorirpkyikv ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797899.165328-3959-163339381487639/AnsiballZ_stat.py
+Sep  3 23:24:59 serverb sudo[30008]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:59 serverb sudo[30008]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:59 serverb sudo[30008]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:24:59 serverb sudo[30067]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ykofkdfkernbrhubhgdsfttsbwhmwocl ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693797899.165328-3959-163339381487639/AnsiballZ_file.py
+Sep  3 23:24:59 serverb sudo[30067]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:24:59 serverb sudo[30067]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:24:59 serverb sudo[30067]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:26:00 serverb sshd[28559]: Received disconnect from 172.25.250.9 port 56218:11: disconnected by user
+Sep  3 23:26:00 serverb sshd[28559]: Disconnected from user devops 172.25.250.9 port 56218
+Sep  3 23:26:00 serverb sshd[28545]: pam_unix(sshd:session): session closed for user devops
+Sep  3 23:26:00 serverb systemd[28553]: pam_unix(systemd-user:session): session closed for user devops
+Sep  3 23:38:08 serverb polkitd[836]: Loading rules from directory /etc/polkit-1/rules.d
+Sep  3 23:38:08 serverb polkitd[836]: Loading rules from directory /usr/share/polkit-1/rules.d
+Sep  3 23:38:08 serverb polkitd[836]: Finished loading, compiling and executing 4 rules
+Sep  3 23:38:08 serverb polkitd[836]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Sep  3 23:38:10 serverb sshd[898]: Server listening on 0.0.0.0 port 22.
+Sep  3 23:38:10 serverb sshd[898]: Server listening on :: port 22.
+Sep  3 23:54:26 serverb sshd[1392]: Accepted publickey for devops from 172.25.250.9 port 57794 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  3 23:54:26 serverb systemd[1396]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Sep  3 23:54:26 serverb sshd[1392]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Sep  3 23:54:26 serverb sudo[1529]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-pqdvoqctnxeszecclfjpwoizzimkcswl ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799666.3157263-3030-100250005876858/AnsiballZ_setup.py
+Sep  3 23:54:26 serverb sudo[1529]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:26 serverb sudo[1529]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:27 serverb sudo[1529]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:28 serverb sudo[1672]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-vmlayyacottvklsshhpklnhjwnsnvenz ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799667.9780066-3050-243894325175389/AnsiballZ_dnf.py
+Sep  3 23:54:28 serverb sudo[1672]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:28 serverb sudo[1672]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:30 serverb sudo[1672]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:31 serverb sudo[1781]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-hdfeotlwvrfjmbsnzxocohukrylezbfa ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799670.9520283-3059-99933306073461/AnsiballZ_systemd.py
+Sep  3 23:54:31 serverb sudo[1781]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:31 serverb sudo[1781]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:31 serverb sudo[1781]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:31 serverb sudo[1894]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-itowohlaxixzzjlalrtmbiuetirdqgkw ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799671.7812479-3059-97450422517429/AnsiballZ_systemd.py
+Sep  3 23:54:31 serverb sudo[1894]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:31 serverb sudo[1894]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:32 serverb sudo[1894]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:32 serverb sudo[2007]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-obkwuqbxvxacgrakvtiatvbparojbffk ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799672.4236803-3075-66943170475337/AnsiballZ_file.py
+Sep  3 23:54:32 serverb sudo[2007]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:32 serverb sudo[2007]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:32 serverb sudo[2007]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:33 serverb sudo[2116]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-qbbvpwpfbjfkdhuwffobjpbcwmzbpmjj ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799673.0043862-3084-89836466220697/AnsiballZ_stat.py
+Sep  3 23:54:33 serverb sudo[2116]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:33 serverb sudo[2116]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:33 serverb sudo[2116]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:33 serverb sudo[2175]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-qhixsysunnrfyeesgenmwvuddrwpgdow ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799673.0043862-3084-89836466220697/AnsiballZ_stat.py
+Sep  3 23:54:33 serverb sudo[2175]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:33 serverb sudo[2175]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:33 serverb sudo[2175]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:33 serverb sudo[2234]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-eglfiidycsteaqvclfogwruxrngifdzt ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799673.0043862-3084-89836466220697/AnsiballZ_file.py
+Sep  3 23:54:33 serverb sudo[2234]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:33 serverb sudo[2234]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:34 serverb sudo[2234]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:34 serverb sudo[2343]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-kzuxoyjuqbluhxuhkzflbaqazlryiglu ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799674.1213202-3084-258964696855479/AnsiballZ_stat.py
+Sep  3 23:54:34 serverb sudo[2343]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:34 serverb sudo[2343]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:34 serverb sudo[2343]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:34 serverb sudo[2402]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-msxffduedprhnawdgsmxmugilyntzexd ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799674.1213202-3084-258964696855479/AnsiballZ_stat.py
+Sep  3 23:54:34 serverb sudo[2402]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:34 serverb sudo[2402]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:34 serverb sudo[2402]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:34 serverb sudo[2461]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-teayeblwzcvgwccuabpfdfkvdnyfttiu ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799674.1213202-3084-258964696855479/AnsiballZ_file.py
+Sep  3 23:54:34 serverb sudo[2461]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:34 serverb sudo[2461]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:34 serverb sudo[2461]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:35 serverb sudo[2570]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-nyyyvhdlfskzwlbxspmulgvbagkqdlvk ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799675.0624917-3084-188491822098961/AnsiballZ_stat.py
+Sep  3 23:54:35 serverb sudo[2570]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:35 serverb sudo[2570]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:35 serverb sudo[2570]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:35 serverb sudo[2629]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-gykkwhexuaftwquyqwfjnkmlbsglllmi ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799675.0624917-3084-188491822098961/AnsiballZ_stat.py
+Sep  3 23:54:35 serverb sudo[2629]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:35 serverb sudo[2629]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:35 serverb sudo[2629]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:35 serverb sudo[2688]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-euclkthqnsmsiuzcjyjykcixmbsuubqf ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799675.0624917-3084-188491822098961/AnsiballZ_file.py
+Sep  3 23:54:35 serverb sudo[2688]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:35 serverb sudo[2688]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:36 serverb sudo[2688]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:36 serverb sudo[2797]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-vjpyxpouhuxivcpphixihoqzpbitgjui ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799676.076027-3084-229644658791497/AnsiballZ_stat.py
+Sep  3 23:54:36 serverb sudo[2797]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:36 serverb sudo[2797]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:36 serverb sudo[2797]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:36 serverb sudo[2856]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-wlxdllfkrhuqmfjobdkgzdpglfxrwgze ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799676.076027-3084-229644658791497/AnsiballZ_stat.py
+Sep  3 23:54:36 serverb sudo[2856]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:36 serverb sudo[2856]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:36 serverb sudo[2856]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:36 serverb sudo[2915]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-yygdwuwjxtixtktmgqpcofnizfetehef ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799676.076027-3084-229644658791497/AnsiballZ_file.py
+Sep  3 23:54:36 serverb sudo[2915]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:36 serverb sudo[2915]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:37 serverb sudo[2915]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:37 serverb sudo[3024]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ouyhblodrossxzdvmjwgndafhsodyvjz ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799677.2731245-3146-22597487200895/AnsiballZ_firewalld.py
+Sep  3 23:54:37 serverb sudo[3024]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:37 serverb sudo[3024]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:37 serverb sudo[3024]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:54:38 serverb sudo[3133]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-tpakpczzavxftetbvmjypmbjflpbnhgz ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693799678.0409985-3146-2060878485395/AnsiballZ_firewalld.py
+Sep  3 23:54:38 serverb sudo[3133]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  3 23:54:38 serverb sudo[3133]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  3 23:54:38 serverb sudo[3133]: pam_unix(sudo:session): session closed for user root
+Sep  3 23:55:38 serverb sshd[1407]: Received disconnect from 172.25.250.9 port 57794:11: disconnected by user
+Sep  3 23:55:38 serverb sshd[1407]: Disconnected from user devops 172.25.250.9 port 57794
+Sep  3 23:55:38 serverb sshd[1392]: pam_unix(sshd:session): session closed for user devops
+Sep  3 23:55:38 serverb systemd[1401]: pam_unix(systemd-user:session): session closed for user devops
+Sep  3 23:56:22 serverb sshd[3166]: error: kex_exchange_identification: client sent invalid protocol identifier "brain"
+Sep  3 23:56:22 serverb sshd[3166]: error: send_error: write: Broken pipe
+Sep  3 23:56:23 serverb sshd[3167]: Accepted publickey for root from 172.25.250.9 port 57876 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  3 23:56:23 serverb systemd[3171]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  3 23:56:23 serverb sshd[3167]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  3 23:56:27 serverb sshd[3181]: Received disconnect from 172.25.250.9 port 57876:11: disconnected by user
+Sep  3 23:56:27 serverb sshd[3181]: Disconnected from user root 172.25.250.9 port 57876
+Sep  3 23:56:27 serverb sshd[3167]: pam_unix(sshd:session): session closed for user root
+Sep  3 23:56:27 serverb sshd[3244]: Accepted publickey for root from 172.25.250.9 port 57878 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  3 23:56:27 serverb systemd[3258]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  3 23:56:27 serverb sshd[3244]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  3 23:56:28 serverb sshd[3268]: Received disconnect from 172.25.250.9 port 57878:11: disconnected by user
+Sep  3 23:56:28 serverb sshd[3268]: Disconnected from user root 172.25.250.9 port 57878
+Sep  3 23:56:28 serverb sshd[3244]: pam_unix(sshd:session): session closed for user root
+Sep  3 23:56:28 serverb sshd[3281]: Accepted publickey for root from 172.25.250.9 port 57880 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  3 23:56:28 serverb systemd[3295]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  3 23:56:28 serverb sshd[3281]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  3 23:56:28 serverb sshd[3305]: Received disconnect from 172.25.250.9 port 57880:11: disconnected by user
+Sep  3 23:56:28 serverb sshd[3305]: Disconnected from user root 172.25.250.9 port 57880
+Sep  3 23:56:28 serverb sshd[3281]: pam_unix(sshd:session): session closed for user root
+Sep  3 23:56:28 serverb sshd[3317]: Accepted publickey for root from 172.25.250.9 port 57882 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  3 23:56:28 serverb systemd[3331]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  3 23:56:29 serverb sshd[3317]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  3 23:56:29 serverb sshd[3341]: Received disconnect from 172.25.250.9 port 57882:11: disconnected by user
+Sep  3 23:56:29 serverb sshd[3341]: Disconnected from user root 172.25.250.9 port 57882
+Sep  3 23:56:29 serverb sshd[3317]: pam_unix(sshd:session): session closed for user root
+Sep  3 23:56:29 serverb sshd[3369]: Accepted publickey for root from 172.25.250.9 port 57884 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  3 23:56:29 serverb systemd[3404]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  3 23:56:29 serverb sshd[3369]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  3 23:56:29 serverb sshd[3418]: Received disconnect from 172.25.250.9 port 57884:11: disconnected by user
+Sep  3 23:56:29 serverb sshd[3418]: Disconnected from user root 172.25.250.9 port 57884
+Sep  3 23:56:29 serverb sshd[3369]: pam_unix(sshd:session): session closed for user root
+Sep  3 23:56:29 serverb sshd[3472]: Accepted publickey for root from 172.25.250.9 port 57886 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  3 23:56:30 serverb systemd[3526]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  3 23:56:30 serverb sshd[3472]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  3 23:56:30 serverb sshd[3542]: Received disconnect from 172.25.250.9 port 57886:11: disconnected by user
+Sep  3 23:56:30 serverb sshd[3542]: Disconnected from user root 172.25.250.9 port 57886
+Sep  3 23:56:30 serverb sshd[3472]: pam_unix(sshd:session): session closed for user root
+Sep  4 07:10:03 serverb polkitd[832]: Loading rules from directory /etc/polkit-1/rules.d
+Sep  4 07:10:03 serverb polkitd[832]: Loading rules from directory /usr/share/polkit-1/rules.d
+Sep  4 07:10:03 serverb polkitd[832]: Finished loading, compiling and executing 4 rules
+Sep  4 07:10:03 serverb polkitd[832]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Sep  4 07:10:04 serverb sshd[894]: Server listening on 0.0.0.0 port 22.
+Sep  4 07:10:04 serverb sshd[894]: Server listening on :: port 22.
+Sep  5 02:08:32 serverb polkitd[836]: Loading rules from directory /etc/polkit-1/rules.d
+Sep  5 02:08:32 serverb polkitd[836]: Loading rules from directory /usr/share/polkit-1/rules.d
+Sep  5 02:08:32 serverb polkitd[836]: Finished loading, compiling and executing 4 rules
+Sep  5 02:08:32 serverb polkitd[836]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Sep  5 02:08:35 serverb sshd[897]: Server listening on 0.0.0.0 port 22.
+Sep  5 02:08:35 serverb sshd[897]: Server listening on :: port 22.
+Sep  5 02:12:05 serverb sshd[1173]: error: kex_exchange_identification: client sent invalid protocol identifier "brain"
+Sep  5 02:12:05 serverb sshd[1173]: error: send_error: write: Broken pipe
+Sep  5 02:12:05 serverb sshd[1174]: Accepted publickey for root from 172.25.250.9 port 50810 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 02:12:05 serverb systemd[1178]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 02:12:05 serverb sshd[1174]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 02:12:07 serverb sshd[1188]: Received disconnect from 172.25.250.9 port 50810:11: disconnected by user
+Sep  5 02:12:07 serverb sshd[1188]: Disconnected from user root 172.25.250.9 port 50810
+Sep  5 02:12:07 serverb sshd[1174]: pam_unix(sshd:session): session closed for user root
+Sep  5 02:12:08 serverb sshd[1201]: Accepted publickey for root from 172.25.250.9 port 50812 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 02:12:08 serverb systemd[1216]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 02:12:08 serverb sshd[1201]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 02:12:09 serverb sshd[1226]: Received disconnect from 172.25.250.9 port 50812:11: disconnected by user
+Sep  5 02:12:09 serverb sshd[1226]: Disconnected from user root 172.25.250.9 port 50812
+Sep  5 02:12:09 serverb sshd[1201]: pam_unix(sshd:session): session closed for user root
+Sep  5 02:12:09 serverb sshd[1240]: Accepted publickey for root from 172.25.250.9 port 50814 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 02:12:09 serverb systemd[1253]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 02:12:09 serverb sshd[1240]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 02:12:09 serverb sshd[1263]: Received disconnect from 172.25.250.9 port 50814:11: disconnected by user
+Sep  5 02:12:09 serverb sshd[1263]: Disconnected from user root 172.25.250.9 port 50814
+Sep  5 02:12:09 serverb sshd[1240]: pam_unix(sshd:session): session closed for user root
+Sep  5 02:12:09 serverb sshd[1276]: Accepted publickey for root from 172.25.250.9 port 50816 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 02:12:09 serverb systemd[1289]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 02:12:09 serverb sshd[1276]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 02:12:09 serverb sshd[1299]: Received disconnect from 172.25.250.9 port 50816:11: disconnected by user
+Sep  5 02:12:09 serverb sshd[1299]: Disconnected from user root 172.25.250.9 port 50816
+Sep  5 02:12:09 serverb sshd[1276]: pam_unix(sshd:session): session closed for user root
+Sep  5 02:12:09 serverb sshd[1312]: Accepted publickey for root from 172.25.250.9 port 50818 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 02:12:10 serverb systemd[1325]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 02:12:10 serverb sshd[1312]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 02:12:10 serverb sshd[1335]: Received disconnect from 172.25.250.9 port 50818:11: disconnected by user
+Sep  5 02:12:10 serverb sshd[1335]: Disconnected from user root 172.25.250.9 port 50818
+Sep  5 02:12:10 serverb sshd[1312]: pam_unix(sshd:session): session closed for user root
+Sep  5 02:12:10 serverb sshd[1348]: Accepted publickey for root from 172.25.250.9 port 50820 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 02:12:10 serverb systemd[1361]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 02:12:10 serverb sshd[1348]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 02:12:11 serverb sshd[1371]: Received disconnect from 172.25.250.9 port 50820:11: disconnected by user
+Sep  5 02:12:11 serverb sshd[1371]: Disconnected from user root 172.25.250.9 port 50820
+Sep  5 02:12:11 serverb sshd[1348]: pam_unix(sshd:session): session closed for user root
+Sep  5 02:34:42 serverb sshd[1408]: Accepted publickey for devops from 172.25.250.9 port 50828 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 02:34:42 serverb systemd[1412]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Sep  5 02:34:42 serverb sshd[1408]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Sep  5 02:34:43 serverb sudo[1546]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ptgbvemcoqlnhrjqwziskfyzcxuojazd ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693895682.2688212-3137-243279130245311/AnsiballZ_setup.py
+Sep  5 02:34:43 serverb sudo[1546]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 02:34:43 serverb sudo[1546]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 02:34:44 serverb sudo[1546]: pam_unix(sudo:session): session closed for user root
+Sep  5 02:34:51 serverb sudo[1722]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-heteiaxtvntygmzlbmloelqqfjjtsfqx ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693895690.8385913-3169-170235956392438/AnsiballZ_setup.py
+Sep  5 02:34:51 serverb sudo[1722]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 02:34:51 serverb sudo[1722]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 02:34:51 serverb sudo[1722]: pam_unix(sudo:session): session closed for user root
+Sep  5 02:35:51 serverb sshd[1424]: Received disconnect from 172.25.250.9 port 50828:11: disconnected by user
+Sep  5 02:35:51 serverb sshd[1424]: Disconnected from user devops 172.25.250.9 port 50828
+Sep  5 02:35:51 serverb sshd[1408]: pam_unix(sshd:session): session closed for user devops
+Sep  5 02:35:51 serverb systemd[1417]: pam_unix(systemd-user:session): session closed for user devops
+Sep  5 02:36:24 serverb sshd[1788]: Accepted publickey for devops from 172.25.250.9 port 50830 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 02:36:24 serverb systemd[1792]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Sep  5 02:36:24 serverb sshd[1788]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Sep  5 02:36:25 serverb sudo[1924]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ylvazzhicsqkgmvapxixfhpjefnjlzew ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693895784.573925-3237-79212185347331/AnsiballZ_setup.py
+Sep  5 02:36:25 serverb sudo[1924]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 02:36:25 serverb sudo[1924]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 02:36:25 serverb sudo[1924]: pam_unix(sudo:session): session closed for user root
+Sep  5 02:37:25 serverb sshd[1802]: Received disconnect from 172.25.250.9 port 50830:11: disconnected by user
+Sep  5 02:37:25 serverb sshd[1802]: Disconnected from user devops 172.25.250.9 port 50830
+Sep  5 02:37:25 serverb sshd[1788]: pam_unix(sshd:session): session closed for user devops
+Sep  5 02:37:25 serverb systemd[1796]: pam_unix(systemd-user:session): session closed for user devops
+Sep  5 02:40:24 serverb sshd[1989]: Accepted publickey for devops from 172.25.250.9 port 50832 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 02:40:24 serverb systemd[1993]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Sep  5 02:40:24 serverb sshd[1989]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Sep  5 02:40:25 serverb sudo[2125]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-gccwrptwnhqyevnpyshwhjovohqxrtps ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693896024.6173358-3321-207945743851759/AnsiballZ_setup.py
+Sep  5 02:40:25 serverb sudo[2125]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 02:40:25 serverb sudo[2125]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 02:40:25 serverb sudo[2125]: pam_unix(sudo:session): session closed for user root
+Sep  5 02:41:25 serverb sshd[2003]: Received disconnect from 172.25.250.9 port 50832:11: disconnected by user
+Sep  5 02:41:25 serverb sshd[2003]: Disconnected from user devops 172.25.250.9 port 50832
+Sep  5 02:41:25 serverb sshd[1989]: pam_unix(sshd:session): session closed for user devops
+Sep  5 02:41:25 serverb systemd[1997]: pam_unix(systemd-user:session): session closed for user devops
+Sep  5 02:41:49 serverb sshd[2191]: Accepted publickey for devops from 172.25.250.9 port 50834 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 02:41:49 serverb systemd[2195]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Sep  5 02:41:49 serverb sshd[2191]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Sep  5 02:41:50 serverb sudo[2327]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ndhkysueuqqmymebysqssrfiuxeizqbi ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693896109.7015016-3374-37353796205679/AnsiballZ_setup.py
+Sep  5 02:41:50 serverb sudo[2327]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 02:41:50 serverb sudo[2327]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 02:41:50 serverb sudo[2327]: pam_unix(sudo:session): session closed for user root
+Sep  5 02:42:50 serverb sshd[2205]: Received disconnect from 172.25.250.9 port 50834:11: disconnected by user
+Sep  5 02:42:50 serverb sshd[2205]: Disconnected from user devops 172.25.250.9 port 50834
+Sep  5 02:42:50 serverb sshd[2191]: pam_unix(sshd:session): session closed for user devops
+Sep  5 02:42:50 serverb systemd[2199]: pam_unix(systemd-user:session): session closed for user devops
+Sep  5 03:17:25 serverb sshd[2427]: Accepted publickey for devops from 172.25.250.9 port 50836 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 03:17:25 serverb systemd[2431]: pam_unix(systemd-user:session): session opened for user devops by (uid=0)
+Sep  5 03:17:25 serverb sshd[2427]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Sep  5 03:17:25 serverb sudo[2564]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ysczkhizhaukakbprfluzapdpqjjmpjf ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898245.4335797-3897-242931517176901/AnsiballZ_setup.py
+Sep  5 03:17:25 serverb sudo[2564]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:25 serverb sudo[2564]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:26 serverb sudo[2564]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:26 serverb sudo[2707]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-negpjnmwamirnznvkxnyphdeecqvjwud ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898246.6465995-3914-20551642663183/AnsiballZ_dnf.py
+Sep  5 03:17:26 serverb sudo[2707]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:26 serverb sudo[2707]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:32 serverb sudo[2707]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:32 serverb sudo[2863]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-wjqrkdisljrqsgpiuoszislbwmfyzzym ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898252.560152-3923-87221513007332/AnsiballZ_systemd.py
+Sep  5 03:17:32 serverb sudo[2863]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:32 serverb sudo[2863]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:33 serverb sudo[2863]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:33 serverb sudo[3221]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-wlthahvrgcaufjowrfdgllpkqreabqdb ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898253.638976-3923-31357673088465/AnsiballZ_systemd.py
+Sep  5 03:17:33 serverb sudo[3221]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:33 serverb sudo[3221]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:34 serverb sudo[3221]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:34 serverb sudo[3424]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-mjcygyfxfgmztynnvnuctjzbmkuoqodp ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898254.2034411-3939-3664929936639/AnsiballZ_file.py
+Sep  5 03:17:34 serverb sudo[3424]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:34 serverb sudo[3424]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:34 serverb sudo[3424]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:35 serverb sudo[3859]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-dnoorolseokgnelhhqpntcqjjdgbdsdj ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898254.7616-3948-74388058710462/AnsiballZ_stat.py
+Sep  5 03:17:35 serverb sudo[3859]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:35 serverb sudo[3859]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:35 serverb sudo[3859]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:35 serverb sudo[3933]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-qkswcvqmdbwfrotgjyfqvajfaetdelqv ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898254.7616-3948-74388058710462/AnsiballZ_stat.py
+Sep  5 03:17:35 serverb sudo[3933]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:35 serverb sudo[3933]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:35 serverb sudo[3933]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:35 serverb sudo[4021]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ycrdpdwaorcipwzvikuyrlabnlnhbzrx ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898254.7616-3948-74388058710462/AnsiballZ_copy.py
+Sep  5 03:17:35 serverb sudo[4021]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:35 serverb sudo[4021]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:35 serverb sudo[4021]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:36 serverb sudo[4132]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ulmeldgcqalanlnwtteihtqnprequanu ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898256.061239-3948-108740899506705/AnsiballZ_stat.py
+Sep  5 03:17:36 serverb sudo[4132]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:36 serverb sudo[4132]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:36 serverb sudo[4132]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:36 serverb sudo[4191]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-drvlhqilxbxzjahmtvqovcndoklceahf ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898256.061239-3948-108740899506705/AnsiballZ_stat.py
+Sep  5 03:17:36 serverb sudo[4191]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:36 serverb sudo[4191]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:36 serverb sudo[4191]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:36 serverb sudo[4279]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-jkutveneqrakqwrgjueacfuwitrvxlcv ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898256.061239-3948-108740899506705/AnsiballZ_copy.py
+Sep  5 03:17:36 serverb sudo[4279]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:36 serverb sudo[4279]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:36 serverb sudo[4279]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:37 serverb sudo[4392]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-bzlixpodouyvsusdnfmeapfkrwvwsnuw ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898257.057171-3948-31618309616195/AnsiballZ_stat.py
+Sep  5 03:17:37 serverb sudo[4392]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:37 serverb sudo[4392]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:37 serverb sudo[4392]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:37 serverb sudo[4451]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-pckjrqbuonwoomairynebrzokugvteuw ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898257.057171-3948-31618309616195/AnsiballZ_stat.py
+Sep  5 03:17:37 serverb sudo[4451]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:37 serverb sudo[4451]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:37 serverb sudo[4451]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:37 serverb sudo[4541]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-onkmnpzelpygbqmrdumfyfokljoearit ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898257.057171-3948-31618309616195/AnsiballZ_copy.py
+Sep  5 03:17:37 serverb sudo[4541]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:37 serverb sudo[4541]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:38 serverb sudo[4541]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:38 serverb sudo[4652]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-rpzlbqebxstnvhzxevdlhmwricajhdxm ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898258.0981343-3948-17735043773631/AnsiballZ_stat.py
+Sep  5 03:17:38 serverb sudo[4652]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:38 serverb sudo[4652]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:38 serverb sudo[4652]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:38 serverb sudo[4711]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-pakfltziuvzstgtpargqopyxgdxijzze ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898258.0981343-3948-17735043773631/AnsiballZ_stat.py
+Sep  5 03:17:38 serverb sudo[4711]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:38 serverb sudo[4711]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:38 serverb sudo[4711]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:38 serverb sudo[4799]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-csztwnnhjxfluhggpststufzntlrwnon ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898258.0981343-3948-17735043773631/AnsiballZ_copy.py
+Sep  5 03:17:38 serverb sudo[4799]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:38 serverb sudo[4799]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:38 serverb sudo[4799]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:39 serverb sudo[4910]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ifrtrxdqsnmyehhfuwskhethrefbfnme ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898259.1030612-4022-91549524105540/AnsiballZ_firewalld.py
+Sep  5 03:17:39 serverb sudo[4910]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:39 serverb sudo[4910]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:39 serverb sudo[4910]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:39 serverb sudo[5019]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-oekvmiejpydcdmnifhkvaqzazcplhhmb ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898259.7603812-4022-165105138424836/AnsiballZ_firewalld.py
+Sep  5 03:17:39 serverb sudo[5019]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:39 serverb sudo[5019]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:40 serverb sudo[5019]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:17:40 serverb sudo[5128]:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-tjnsoqznutwnbvpmambysaesnhrdcxwy ; /usr/libexec/platform-python /home/devops/.ansible/tmp/ansible-tmp-1693898260.359807-4038-175400483134413/AnsiballZ_systemd.py
+Sep  5 03:17:40 serverb sudo[5128]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Sep  5 03:17:40 serverb sudo[5128]: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Sep  5 03:17:41 serverb sudo[5128]: pam_unix(sudo:session): session closed for user root
+Sep  5 03:18:04 serverb sshd[5373]: error: kex_exchange_identification: client sent invalid protocol identifier "brain"
+Sep  5 03:18:04 serverb sshd[5373]: error: send_error: write: Broken pipe
+Sep  5 03:18:04 serverb sshd[5374]: Accepted publickey for root from 172.25.250.9 port 50844 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 03:18:04 serverb systemd[5378]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 03:18:04 serverb sshd[5374]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 03:18:04 serverb sshd[5387]: Received disconnect from 172.25.250.9 port 50844:11: disconnected by user
+Sep  5 03:18:04 serverb sshd[5387]: Disconnected from user root 172.25.250.9 port 50844
+Sep  5 03:18:04 serverb sshd[5374]: pam_unix(sshd:session): session closed for user root
+Sep  5 03:18:04 serverb sshd[5400]: Accepted publickey for root from 172.25.250.9 port 50846 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 03:18:04 serverb systemd[5412]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 03:18:04 serverb sshd[5400]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 03:18:04 serverb sshd[5421]: Received disconnect from 172.25.250.9 port 50846:11: disconnected by user
+Sep  5 03:18:04 serverb sshd[5421]: Disconnected from user root 172.25.250.9 port 50846
+Sep  5 03:18:04 serverb sshd[5400]: pam_unix(sshd:session): session closed for user root
+Sep  5 03:18:04 serverb sshd[5434]: Accepted publickey for root from 172.25.250.9 port 50848 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 03:18:04 serverb systemd[5445]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 03:18:05 serverb sshd[5434]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 03:18:05 serverb sshd[5454]: Received disconnect from 172.25.250.9 port 50848:11: disconnected by user
+Sep  5 03:18:05 serverb sshd[5454]: Disconnected from user root 172.25.250.9 port 50848
+Sep  5 03:18:05 serverb sshd[5434]: pam_unix(sshd:session): session closed for user root
+Sep  5 03:18:05 serverb sshd[5466]: Accepted publickey for root from 172.25.250.9 port 50850 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 03:18:05 serverb systemd[5478]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 03:18:05 serverb sshd[5466]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 03:18:05 serverb sshd[5487]: Received disconnect from 172.25.250.9 port 50850:11: disconnected by user
+Sep  5 03:18:05 serverb sshd[5487]: Disconnected from user root 172.25.250.9 port 50850
+Sep  5 03:18:05 serverb sshd[5466]: pam_unix(sshd:session): session closed for user root
+Sep  5 03:18:05 serverb sshd[5500]: Accepted publickey for root from 172.25.250.9 port 50852 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 03:18:05 serverb systemd[5511]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 03:18:05 serverb sshd[5500]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 03:18:05 serverb sshd[5520]: Received disconnect from 172.25.250.9 port 50852:11: disconnected by user
+Sep  5 03:18:05 serverb sshd[5520]: Disconnected from user root 172.25.250.9 port 50852
+Sep  5 03:18:05 serverb sshd[5500]: pam_unix(sshd:session): session closed for user root
+Sep  5 03:18:05 serverb sshd[5533]: Accepted publickey for root from 172.25.250.9 port 50854 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 03:18:05 serverb systemd[5544]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 03:18:05 serverb sshd[5533]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 03:18:05 serverb sshd[5553]: Received disconnect from 172.25.250.9 port 50854:11: disconnected by user
+Sep  5 03:18:05 serverb sshd[5553]: Disconnected from user root 172.25.250.9 port 50854
+Sep  5 03:18:05 serverb sshd[5533]: pam_unix(sshd:session): session closed for user root
+Sep  5 03:18:10 serverb sshd[5573]: error: kex_exchange_identification: client sent invalid protocol identifier "brain"
+Sep  5 03:18:11 serverb sshd[5574]: Accepted publickey for root from 172.25.250.9 port 50860 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 03:18:11 serverb systemd[5578]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 03:18:11 serverb sshd[5574]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 03:18:15 serverb sshd[5587]: Received disconnect from 172.25.250.9 port 50860:11: disconnected by user
+Sep  5 03:18:15 serverb sshd[5587]: Disconnected from user root 172.25.250.9 port 50860
+Sep  5 03:18:15 serverb sshd[5574]: pam_unix(sshd:session): session closed for user root
+Sep  5 03:18:15 serverb sshd[5732]: Accepted publickey for root from 172.25.250.9 port 50862 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 03:18:15 serverb systemd[5864]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 03:18:15 serverb sshd[5732]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 03:18:16 serverb sshd[5878]: Received disconnect from 172.25.250.9 port 50862:11: disconnected by user
+Sep  5 03:18:16 serverb sshd[5878]: Disconnected from user root 172.25.250.9 port 50862
+Sep  5 03:18:16 serverb sshd[5732]: pam_unix(sshd:session): session closed for user root
+Sep  5 03:18:16 serverb sshd[6023]: Accepted publickey for root from 172.25.250.9 port 50864 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 03:18:16 serverb systemd[6051]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 03:18:16 serverb sshd[6023]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 03:18:16 serverb sshd[6060]: Received disconnect from 172.25.250.9 port 50864:11: disconnected by user
+Sep  5 03:18:16 serverb sshd[6060]: Disconnected from user root 172.25.250.9 port 50864
+Sep  5 03:18:16 serverb sshd[6023]: pam_unix(sshd:session): session closed for user root
+Sep  5 03:18:16 serverb sshd[6073]: Accepted publickey for root from 172.25.250.9 port 50866 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 03:18:16 serverb systemd[6084]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 03:18:16 serverb sshd[6073]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 03:18:17 serverb sshd[6093]: Received disconnect from 172.25.250.9 port 50866:11: disconnected by user
+Sep  5 03:18:17 serverb sshd[6093]: Disconnected from user root 172.25.250.9 port 50866
+Sep  5 03:18:17 serverb sshd[6073]: pam_unix(sshd:session): session closed for user root
+Sep  5 03:18:17 serverb sshd[6106]: Accepted publickey for root from 172.25.250.9 port 50868 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 03:18:17 serverb systemd[6118]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 03:18:17 serverb sshd[6106]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 03:18:17 serverb sshd[6127]: Received disconnect from 172.25.250.9 port 50868:11: disconnected by user
+Sep  5 03:18:17 serverb sshd[6127]: Disconnected from user root 172.25.250.9 port 50868
+Sep  5 03:18:17 serverb sshd[6106]: pam_unix(sshd:session): session closed for user root
+Sep  5 03:18:17 serverb sshd[6140]: Accepted publickey for root from 172.25.250.9 port 50870 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  5 03:18:17 serverb systemd[6151]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  5 03:18:17 serverb sshd[6140]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  5 03:18:18 serverb sshd[6160]: Received disconnect from 172.25.250.9 port 50870:11: disconnected by user
+Sep  5 03:18:18 serverb sshd[6160]: Disconnected from user root 172.25.250.9 port 50870
+Sep  5 03:18:18 serverb sshd[6140]: pam_unix(sshd:session): session closed for user root
+Sep  5 03:18:41 serverb sshd[2442]: Received disconnect from 172.25.250.9 port 50836:11: disconnected by user
+Sep  5 03:18:41 serverb sshd[2442]: Disconnected from user devops 172.25.250.9 port 50836
+Sep  5 03:18:41 serverb sshd[2427]: pam_unix(sshd:session): session closed for user devops
+Sep  5 03:18:41 serverb systemd[2436]: pam_unix(systemd-user:session): session closed for user devops
+Sep  6 05:08:27 serverb polkitd[844]: Loading rules from directory /etc/polkit-1/rules.d
+Sep  6 05:08:27 serverb polkitd[844]: Loading rules from directory /usr/share/polkit-1/rules.d
+Sep  6 05:08:27 serverb polkitd[844]: Finished loading, compiling and executing 4 rules
+Sep  6 05:08:27 serverb polkitd[844]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Sep  6 05:08:28 serverb sshd[910]: Server listening on 0.0.0.0 port 22.
+Sep  6 05:08:28 serverb sshd[910]: Server listening on :: port 22.
+Sep  6 05:21:33 serverb sshd[1190]: Accepted publickey for root from 172.25.250.9 port 39648 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Sep  6 05:21:33 serverb systemd[1194]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  6 05:21:33 serverb sshd[1190]: pam_unix(sshd:session): session opened for user root by (uid=0)
