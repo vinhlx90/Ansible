@@ -1,0 +1,7 @@
+---
+- name: Resolve host patterns
+  hosts: 'all,!berlin'
+  tasks:
+    - name: Display managed host name
+      debug:
+        msg: "{{inventory_hostname}}"
