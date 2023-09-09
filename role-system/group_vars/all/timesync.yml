@@ -1,0 +1,7 @@
+---
+#rhel-system-roles.timesync variables for all hosts
+
+timesync_ntp_servers:
+  - hostname: classroom.example.com
+    iburst: yes
+timesync_ntp_providers: chrony
