@@ -1,0 +1,209 @@
+2023-09-12 23:18:21,826 p=3145 u=student n=ansible | PLAY [create mail relay servers] ***********************************************************************************************************************************************
+2023-09-12 23:18:21,837 p=3145 u=student n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2023-09-12 23:18:23,133 p=3145 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:18:23,141 p=3145 u=student n=ansible | TASK [install postfix package] *************************************************************************************************************************************************
+2023-09-12 23:18:24,734 p=3145 u=student n=ansible | changed: [servera.lab.example.com]
+2023-09-12 23:18:24,741 p=3145 u=student n=ansible | TASK [install mail config files] ***********************************************************************************************************************************************
+2023-09-12 23:18:25,204 p=3145 u=student n=ansible | changed: [servera.lab.example.com]
+2023-09-12 23:18:25,211 p=3145 u=student n=ansible | TASK [check main.cf file] ******************************************************************************************************************************************************
+2023-09-12 23:18:25,548 p=3145 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:18:25,555 p=3145 u=student n=ansible | TASK [verify main.cf file exists] **********************************************************************************************************************************************
+2023-09-12 23:18:25,594 p=3145 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "The main.cf file exists"
+}
+2023-09-12 23:18:25,602 p=3145 u=student n=ansible | TASK [start and enable mail services] ******************************************************************************************************************************************
+2023-09-12 23:18:26,268 p=3145 u=student n=ansible | changed: [servera.lab.example.com]
+2023-09-12 23:18:26,276 p=3145 u=student n=ansible | TASK [check for always_bcc] ****************************************************************************************************************************************************
+2023-09-12 23:18:26,731 p=3145 u=student n=ansible | skipping: [servera.lab.example.com]
+2023-09-12 23:18:26,739 p=3145 u=student n=ansible | TASK [email notification of always_bcc config] *********************************************************************************************************************************
+2023-09-12 23:18:26,775 p=3145 u=student n=ansible | fatal: [servera.lab.example.com]: FAILED! => {"msg": "The conditional check 'bcc_state.stdout != 'always_bcc ='' failed. The error was: error while evaluating conditional (bcc_state.stdout != 'always_bcc ='): 'dict object' has no attribute 'stdout'\n\nThe error appears to be in '/home/student/troubleshoot-host/mailrelay.yml': line 42, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: email notification of always_bcc config\n      ^ here\n"}
+2023-09-12 23:18:26,776 p=3145 u=student n=ansible | RUNNING HANDLER [restart postfix] **********************************************************************************************************************************************
+2023-09-12 23:18:26,777 p=3145 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2023-09-12 23:18:26,777 p=3145 u=student n=ansible | servera.lab.example.com    : ok=6    changed=3    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2023-09-12 23:24:41,452 p=3418 u=student n=ansible | servera.lab.example.com | FAILED | rc=1 >>
+head: cannot open '/etc/postfix/main.cf' for reading: No such file or directorynon-zero return code
+
+2023-09-12 23:25:41,808 p=3479 u=student n=ansible | PLAY [create mail relay servers] ***********************************************************************************************************************************************
+2023-09-12 23:25:41,817 p=3479 u=student n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2023-09-12 23:25:43,238 p=3479 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:25:43,245 p=3479 u=student n=ansible | TASK [install postfix package] *************************************************************************************************************************************************
+2023-09-12 23:25:49,535 p=3479 u=student n=ansible | changed: [servera.lab.example.com]
+2023-09-12 23:25:49,542 p=3479 u=student n=ansible | TASK [install mail config files] ***********************************************************************************************************************************************
+2023-09-12 23:25:50,521 p=3479 u=student n=ansible | changed: [servera.lab.example.com]
+2023-09-12 23:25:50,528 p=3479 u=student n=ansible | TASK [check main.cf file] ******************************************************************************************************************************************************
+2023-09-12 23:25:50,911 p=3479 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:25:50,918 p=3479 u=student n=ansible | TASK [verify main.cf file exists] **********************************************************************************************************************************************
+2023-09-12 23:25:50,952 p=3479 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "The main.cf file exists"
+}
+2023-09-12 23:25:50,959 p=3479 u=student n=ansible | TASK [start and enable mail services] ******************************************************************************************************************************************
+2023-09-12 23:25:52,861 p=3479 u=student n=ansible | changed: [servera.lab.example.com]
+2023-09-12 23:25:52,868 p=3479 u=student n=ansible | TASK [check for always_bcc] ****************************************************************************************************************************************************
+2023-09-12 23:25:53,315 p=3479 u=student n=ansible | changed: [servera.lab.example.com]
+2023-09-12 23:25:53,322 p=3479 u=student n=ansible | TASK [email notification of always_bcc config] *********************************************************************************************************************************
+2023-09-12 23:25:53,355 p=3479 u=student n=ansible | skipping: [servera.lab.example.com]
+2023-09-12 23:25:53,356 p=3479 u=student n=ansible | RUNNING HANDLER [restart postfix] **********************************************************************************************************************************************
+2023-09-12 23:25:54,226 p=3479 u=student n=ansible | changed: [servera.lab.example.com]
+2023-09-12 23:25:54,228 p=3479 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2023-09-12 23:25:54,229 p=3479 u=student n=ansible | servera.lab.example.com    : ok=8    changed=5    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-12 23:26:44,625 p=3584 u=student n=ansible | servera.lab.example.com | CHANGED | rc=0 >>
+# Ansible managed
+#
+# Global Postfix configuration file. This file lists only a subset
+# of all parameters. For the syntax, and for a complete parameter
+# list, see the postconf(5) manual page (command: "man 5 postconf").
+#
+# For common configuration examples, see BASIC_CONFIGURATION_README
+# and STANDARD_CONFIGURATION_README. To find these documents, use
+# the command "postconf html_directory readme_directory", or go to
+# http://www.postfix.org/BASIC_CONFIGURATION_README.html etc.
+
+2023-09-12 23:27:25,201 p=3625 u=student n=ansible | servera.lab.example.com | CHANGED | rc=0 >>
+# Ansible managed
+#
+# Global Postfix configuration file. This file lists only a subset
+# of all parameters. For the syntax, and for a complete parameter
+# list, see the postconf(5) manual page (command: "man 5 postconf").
+#
+# For common configuration examples, see BASIC_CONFIGURATION_README
+# and STANDARD_CONFIGURATION_README. To find these documents, use
+# the command "postconf html_directory readme_directory", or go to
+# http://www.postfix.org/BASIC_CONFIGURATION_README.html etc.
+
+2023-09-12 23:28:08,240 p=3665 u=student n=ansible | servera.lab.example.com | CHANGED | rc=0 >>
+# certificates.
+#
+smtp_tls_CAfile = /etc/pki/tls/certs/ca-bundle.crt
+
+# Use TLS if this is supported by the remote SMTP server, otherwise use
+# plaintext (opportunistic TLS outbound).
+#
+smtp_tls_security_level = may
+meta_directory = /etc/postfix
+shlib_directory = /usr/lib64/postfix
+
+2023-09-12 23:32:28,509 p=3741 u=student n=ansible | PLAY [create mail relay servers] ***********************************************************************************************************************************************
+2023-09-12 23:32:28,517 p=3741 u=student n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2023-09-12 23:32:29,773 p=3741 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:32:29,780 p=3741 u=student n=ansible | TASK [install postfix package] *************************************************************************************************************************************************
+2023-09-12 23:32:31,338 p=3741 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:32:31,345 p=3741 u=student n=ansible | TASK [install mail config files] ***********************************************************************************************************************************************
+2023-09-12 23:32:32,141 p=3741 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:32:32,147 p=3741 u=student n=ansible | TASK [check main.cf file] ******************************************************************************************************************************************************
+2023-09-12 23:32:32,489 p=3741 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:32:32,496 p=3741 u=student n=ansible | TASK [verify main.cf file exists] **********************************************************************************************************************************************
+2023-09-12 23:32:32,529 p=3741 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "The main.cf file exists"
+}
+2023-09-12 23:32:32,536 p=3741 u=student n=ansible | TASK [start and enable mail services] ******************************************************************************************************************************************
+2023-09-12 23:32:33,185 p=3741 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:32:33,192 p=3741 u=student n=ansible | TASK [check for always_bcc] ****************************************************************************************************************************************************
+2023-09-12 23:32:33,615 p=3741 u=student n=ansible | skipping: [servera.lab.example.com]
+2023-09-12 23:32:33,622 p=3741 u=student n=ansible | TASK [email notification of always_bcc config] *********************************************************************************************************************************
+2023-09-12 23:32:33,654 p=3741 u=student n=ansible | fatal: [servera.lab.example.com]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'stdout'\n\nThe error appears to be in '/home/student/troubleshoot-host/mailrelay.yml': line 42, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: email notification of always_bcc config\n      ^ here\n"}
+2023-09-12 23:32:33,655 p=3741 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2023-09-12 23:32:33,655 p=3741 u=student n=ansible | servera.lab.example.com    : ok=6    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2023-09-12 23:32:44,509 p=3830 u=student n=ansible | PLAY [create mail relay servers] ***********************************************************************************************************************************************
+2023-09-12 23:32:44,518 p=3830 u=student n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2023-09-12 23:32:45,539 p=3830 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:32:45,547 p=3830 u=student n=ansible | TASK [install postfix package] *************************************************************************************************************************************************
+2023-09-12 23:32:47,119 p=3830 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:32:47,127 p=3830 u=student n=ansible | TASK [install mail config files] ***********************************************************************************************************************************************
+2023-09-12 23:32:47,955 p=3830 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:32:47,961 p=3830 u=student n=ansible | TASK [check main.cf file] ******************************************************************************************************************************************************
+2023-09-12 23:32:48,314 p=3830 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:32:48,321 p=3830 u=student n=ansible | TASK [verify main.cf file exists] **********************************************************************************************************************************************
+2023-09-12 23:32:48,354 p=3830 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "The main.cf file exists"
+}
+2023-09-12 23:32:48,361 p=3830 u=student n=ansible | TASK [start and enable mail services] ******************************************************************************************************************************************
+2023-09-12 23:32:49,022 p=3830 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:32:49,028 p=3830 u=student n=ansible | TASK [check for always_bcc] ****************************************************************************************************************************************************
+2023-09-12 23:32:49,463 p=3830 u=student n=ansible | changed: [servera.lab.example.com]
+2023-09-12 23:32:49,470 p=3830 u=student n=ansible | TASK [email notification of always_bcc config] *********************************************************************************************************************************
+2023-09-12 23:32:49,941 p=3830 u=student n=ansible | fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (mail) module: when Supported parameters include: attach, bcc, body, cc, charset, headers, host, password, port, secure, sender, subject, subtype, timeout, to, username"}
+2023-09-12 23:32:49,942 p=3830 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2023-09-12 23:32:49,942 p=3830 u=student n=ansible | servera.lab.example.com    : ok=7    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-12 23:33:34,410 p=3925 u=student n=ansible | servera.lab.example.com | FAILED | rc=2 >>
+usage: firewalld [-h] [--debug [level]] [--debug-gc] [--nofork] [--nopid]
+                 [--system-config path] [--default-config path]
+                 [--log-file path]
+firewalld: error: unrecognized arguments: --list-allnon-zero return code
+
+2023-09-12 23:33:46,917 p=3955 u=student n=ansible | servera.lab.example.com | FAILED | rc=2 >>
+usage: firewalld [-h] [--debug [level]] [--debug-gc] [--nofork] [--nopid]
+                 [--system-config path] [--default-config path]
+                 [--log-file path]
+firewalld: error: unrecognized arguments: --list-servicesnon-zero return code
+
+2023-09-12 23:33:59,060 p=3979 u=student n=ansible | servera.lab.example.com | FAILED | rc=2 >>
+usage: firewalld [-h] [--debug [level]] [--debug-gc] [--nofork] [--nopid]
+                 [--system-config path] [--default-config path]
+                 [--log-file path]
+firewalld: error: unrecognized arguments: --list-servicesnon-zero return code
+
+2023-09-12 23:34:39,768 p=4023 u=student n=ansible | servera.lab.example.com | CHANGED | rc=0 >>
+cockpit dhcpv6-client https samba ssh
+
+2023-09-12 23:34:51,989 p=4047 u=student n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: serverb.lab.example.com
+
+2023-09-12 23:34:51,990 p=4047 u=student n=ansible | [WARNING]: No hosts matched, nothing to do
+
+2023-09-12 23:36:50,326 p=4095 u=student n=ansible | PLAY [create mail relay servers] ***********************************************************************************************************************************************
+2023-09-12 23:36:50,334 p=4095 u=student n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2023-09-12 23:36:51,533 p=4095 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:36:51,541 p=4095 u=student n=ansible | TASK [install postfix package] *************************************************************************************************************************************************
+2023-09-12 23:36:53,064 p=4095 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:36:53,072 p=4095 u=student n=ansible | TASK [install mail config files] ***********************************************************************************************************************************************
+2023-09-12 23:36:53,841 p=4095 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:36:53,847 p=4095 u=student n=ansible | TASK [check main.cf file] ******************************************************************************************************************************************************
+2023-09-12 23:36:54,189 p=4095 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:36:54,196 p=4095 u=student n=ansible | TASK [verify main.cf file exists] **********************************************************************************************************************************************
+2023-09-12 23:36:54,231 p=4095 u=student n=ansible | ok: [servera.lab.example.com] => {
+    "msg": "The main.cf file exists"
+}
+2023-09-12 23:36:54,238 p=4095 u=student n=ansible | TASK [start and enable mail services] ******************************************************************************************************************************************
+2023-09-12 23:36:54,898 p=4095 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:36:54,904 p=4095 u=student n=ansible | TASK [check for always_bcc] ****************************************************************************************************************************************************
+2023-09-12 23:36:55,366 p=4095 u=student n=ansible | changed: [servera.lab.example.com]
+2023-09-12 23:36:55,373 p=4095 u=student n=ansible | TASK [email notification of always_bcc config] *********************************************************************************************************************************
+2023-09-12 23:36:55,865 p=4095 u=student n=ansible | fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (mail) module: when Supported parameters include: attach, bcc, body, cc, charset, headers, host, password, port, secure, sender, subject, subtype, timeout, to, username"}
+2023-09-12 23:36:55,866 p=4095 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2023-09-12 23:36:55,866 p=4095 u=student n=ansible | servera.lab.example.com    : ok=7    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-09-12 23:37:37,226 p=4192 u=student n=ansible | servera.lab.example.com | CHANGED | rc=0 >>
+cockpit dhcpv6-client https samba ssh
+
+2023-09-12 23:38:48,590 p=4229 u=student n=ansible | playbook: mailrelay.yml
+2023-09-12 23:38:48,590 p=4229 u=student n=ansible |   play #1 (mailrelay): create mail relay servers	TAGS: []
+2023-09-12 23:38:48,591 p=4229 u=student n=ansible |     tasks:
+      install postfix package	TAGS: []
+      install mail config files	TAGS: []
+      check main.cf file	TAGS: []
+      verify main.cf file exists	TAGS: []
+      start and enable mail services	TAGS: []
+      check for always_bcc	TAGS: []
+      email notification of always_bcc config	TAGS: []
+      postfix firewall configure	TAGS: []
+
+2023-09-12 23:41:56,007 p=4298 u=student n=ansible | playbook: mailrelay.yml
+2023-09-12 23:41:56,007 p=4298 u=student n=ansible |   play #1 (mailrelay): create mail relay servers	TAGS: []
+2023-09-12 23:41:56,008 p=4298 u=student n=ansible |     tasks:
+      install postfix package	TAGS: []
+      install mail config files	TAGS: []
+      check main.cf file	TAGS: []
+      verify main.cf file exists	TAGS: []
+      start and enable mail services	TAGS: []
+      check for always_bcc	TAGS: []
+      email notification of always_bcc config	TAGS: []
+      postfix firewall configure	TAGS: []
+
+2023-09-12 23:42:29,549 p=4313 u=student n=ansible | PLAY [create mail relay servers] ***********************************************************************************************************************************************
+2023-09-12 23:42:29,558 p=4313 u=student n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2023-09-12 23:42:30,778 p=4313 u=student n=ansible | ok: [servera.lab.example.com]
+2023-09-12 23:42:30,784 p=4313 u=student n=ansible | TASK [postfix firewall configure] **********************************************************************************************************************************************
+2023-09-12 23:42:31,370 p=4313 u=student n=ansible | changed: [servera.lab.example.com]
+2023-09-12 23:42:31,372 p=4313 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2023-09-12 23:42:31,372 p=4313 u=student n=ansible | servera.lab.example.com    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-12 23:43:06,817 p=4359 u=student n=ansible | servera.lab.example.com | CHANGED | rc=0 >>
+cockpit dhcpv6-client https samba smtp ssh
+
