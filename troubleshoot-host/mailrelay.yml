@@ -44,15 +44,7 @@
         to: student@serverb.example.com
         subject: 'always_bcc setting is not empty'
         body: "always_bcc is {{bcc_state.stdout}}"
-        when: bcc_sme:tate.stdout != 'always_bcc ='
-
-    - name: postfix firewall configure
-      firewalld:
-        service: smtp
-        state: enabled
-        permanent: true
-        immediate: true
-
+      when: bcc_state.stdout != 'always_bcc ='
 
   handlers:
     - name: restart postfix
