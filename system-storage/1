@@ -1,0 +1,53 @@
+---
+- name: Ensure Apache Storage Configuration
+  hosts: webservers
+  vars_files:
+    - storage_vars.yml
+  tasks:
+    - name: Correct partitions exist on /dev/vdb
+      parted:
+        device: /dev/vdb
+        number: "{{ item.number }}"
+        part_start: "{{ item.start }}"
+        part_end: "{{ item.end }}"
+        state: present
+      loop: "{{ partitions }}"
+
+    - name: Ensure Volume Groups Exist
+      lvg:
+        pvs: "{{ item.devices }}"
+        vg: "{{ item.name }}"
+      loop: "{{  volume_groups }}"
+
+    - name: Create each Logical Volume (LV) if needed
+      lvol:
+        lv: "{{ item.name }}"
+        vg: "{{ item.vgroup }}"
+        size: "{{ item.size }}"
+      loop: "{{ logical_volumes }}"
+      when: item.name not in ansible_lvm[ "lvs" ]
+
+    - name: Ensure XFS Filesystem exists on each LV
+      filesystem:
+        dev: "/dev/{{ item.vgroup }}/{{ item.name }}"
+        fstype: xfs
+      loop: "{{ logical_volumes }}"
+
+    - name: Ensure the correct capacity for each LV
+      lvol:
+        lv: "{{ item.name }}"
+        vg: "{{ item.vgroup }}"
+        size: "{{ item.size }}"
+        force: true
+      loop: "{{ logical_volumes }}"
+
+    - name: Each Logical Volume is mounted
+      mount:
+        path: "{{ item.mount_path }}"
+        src: "/dev/{{ item.vgroup }}/{{ item.name }}"
+        state: mounted
+        fstype: xfs
+        opts: noatime
+      loop: "{{ logical_volumes }}"
+
+
